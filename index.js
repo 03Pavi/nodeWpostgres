@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8081;
-const userRouter = require("./routes/user/index.js");
+const userRouter = require("./routes/user/user.route.js");
 const { connectToDB } = require("./config/db.js");
 // Middleware
 app.use(express.json()); // Parse JSON bodies
